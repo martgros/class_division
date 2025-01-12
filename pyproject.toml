@@ -1,21 +1,16 @@
-[tool.poetry]
-name = "poc-group-classification"
+[project]
+name = "class-division"
 version = "0.1.0"
-description = "group classification for children school class separation"
-authors = ["Grossbichler, Martin <Martin.Grossbichler@magna.com>"]
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-numpy = "^1.23.0"
-scikit-learn = "^1.5.1"
-matplotlib = "^3.9.1"
-ipykernel = "^6.29.5"
-requests = "^2.32.3"
-folium = "^0.17.0"
-k-means-constrained = "^0.7.3"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.10"
+dependencies = [
+    "folium>=0.17.0",
+    "ipykernel>=6.29.5",
+    "k-means-constrained>=0.7.3",
+    "matplotlib>=3.9.2",
+    "numpy==1.23.0",
+    "odfpy>=1.4.1",
+    "requests>=2.32.3",
+    "scikit-learn>=1.5.2",
+]
